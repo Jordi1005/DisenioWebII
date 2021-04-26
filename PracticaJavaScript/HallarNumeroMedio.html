@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <title>Tecnologia Web - Portal de Asignaciones | Nombre | UPDS -Cbba.</title>
+    <link rel="stylesheet" href="/css/Funciones.css">
+</head>
+<body>
+    <div class="contenedor">
+        <form action="">
+            <p>Ingrese el primer numero</p>
+            <input id="numero1" type="text">
+            <p>Ingrese el segundo numero</p>
+            <input id="numero2" type="text">
+            <p>Ingrese el tercer numero</p>
+            <input id="numero3" type="text">
+            <p>El numero con el valor intermedio es :</p>
+            <input id="resultado" type="text" readonly>
+            <input type="button" class="btn" onclick="Potencia()" value="Resultado">
+        </form>
+    </div>
+        <script>
+            function Potencia(numero1,numero2,numero3)
+            {
+                var num1 =parseFloat(document.getElementById('numero1').value);
+                var num2 =parseFloat(document.getElementById('numero2').value);
+                var num3 =parseFloat(document.getElementById('numero3').value);
+                var numeros=[num1,num2,num3];
+                
+                function comparar ( a, b ){ return a - b; }
+                numeros.sort( comparar );
+                
+                var res1 =numeros[1];
+                document.getElementById('resultado').value=res1;
+
+            }
+        </script>
+    
+</body>
+</html>
