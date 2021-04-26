@@ -5,13 +5,29 @@
     <title>Tecnologia Web - Portal de Asignaciones | Nombre | UPDS -Cbba.</title>
     <link rel="stylesheet" href="css/botones.css">
 </head>
-<body>
+<body id="contenedor">
     
     <div>
       <button id="btnSaludar" onclick="Saludo()">Prueba</button>
     </div>
     <div>
+<button id="Crear-caja"> crear caja</button>
+<section id="section">
+
+</section>
+
+
         <script>
+            var btnCaja= document.getElementById('btn-caja');
+            btnCaja.addEventListener('click',crearCaja);
+
+            function crearCaja()
+            {
+                var contenedor = doc.getElementById('contenedor');
+                var caja= document.createElement('div');
+                caja.className='caja';
+                contenedor.
+            }
             function Saludo()
             {
                 alert('hola mundo');
